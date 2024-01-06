@@ -11,7 +11,8 @@ checkButton.addEventListener('click', () => {
     } else {
 
       if (textInput.length === 1) {
-        result.innerText = `${textInput} is a palindrome`;
+        result.innerHTML = `<strong>${textInput}</strong> is a palindrome`;
+        textContainer.classList.add("show-result");
       }
 
       isPalindrome(textInput);
@@ -25,8 +26,10 @@ const isPalindrome = (text) => {
   const formattedText = text.toLowerCase().replace(regex, '');
   
   if (formattedText === formattedText.split('').reverse().join('')) {
-    result.innerText = `${text} is a palindrome`;
+    result.innerHTML = `<strong>${text}</strong> is a palindrome`;
+    textContainer.classList.add("show-result");
   } else {
-    result.innerText = `${text} is not a palindrome`;
+    result.innerHTML = `<strong>${text}</strong> is not a palindrome`;
+    textContainer.classList.add("show-result");
   }
 };
