@@ -1,0 +1,101 @@
+:root {
+    --background: #3b3b4f;
+    --mobile-background: #dfdfe2;
+    --mobile-border: #000000;
+    --linear-button: linear-gradient(180deg, #f3f2f1, #99958e);
+    --border-button: #aaaaaa;
+  }
+  
+  * {
+    background-color: var(--background);
+    font-family: Tahoma, sans-serif;
+    color: white;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  img {
+    width: 16rem;
+  }
+  
+  h1 {
+    width: 22rem;
+    text-align: center;
+    margin: 2.5rem 0;
+    font-size: 2.1rem;
+  }
+  
+  .mobile-screen {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--mobile-background);
+    color: var(--mobile-border);
+    width: 14rem;
+    height: 23rem;
+    align-items: center;
+  }
+  
+  .camera {
+    background-color: var(--mobile-background);
+    width: .6rem;
+    height: .6rem;
+    border-radius: 100%;
+    margin: 1rem auto;
+  }
+  
+  .mobile-border {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--mobile-border);
+    width: 16rem;
+    height: 30rem;
+    border-radius: 1rem;
+    align-items: center;
+  }
+  
+  label {
+    background-color: var(--mobile-background);
+    color: black;
+    padding: .7rem 0;
+    letter-spacing: .05rem;
+  }
+  
+  input {
+    width: 12rem;
+    height: 2.5rem;
+    background-color: white;
+    border-radius: .5rem;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  .buttons {
+    background-color: var(--mobile-border);
+  }
+  
+  button {
+    width: 6rem;
+    font-size: 1.2rem;
+    background: var(--linear-button);
+    border: 2px solid var(--border-button);
+    margin: .5rem .5rem;
+    color: black;
+    cursor: pointer;
+  }
+  
+  #results-div {
+    background-color: var(--mobile-screen);
+    color:#573800;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+  }
