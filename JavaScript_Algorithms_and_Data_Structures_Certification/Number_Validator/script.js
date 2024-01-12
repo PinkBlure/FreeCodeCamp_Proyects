@@ -21,10 +21,11 @@ check.addEventListener('click', () => {
     alert('Please provide a phone number.')
   }
   if (isValid(input.value)) {
-    result.innerText = `Valid US number: ${input.value}`
+    result.innerText += `Valid US number: ${input.value}\n`
   } else {
-    result.innerText = `Invalid US number: ${input.value}`
+    result.innerText += `Invalid US number: ${input.value}\n`
   }
+
 })
 
 clear.addEventListener('click', () => {
