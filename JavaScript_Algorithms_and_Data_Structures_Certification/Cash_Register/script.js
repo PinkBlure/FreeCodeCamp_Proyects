@@ -45,6 +45,8 @@ purchase.addEventListener('click', ()=>{
   if (checkFund(changeTotal) != -1) {
     getChange(changeTotal)
   }
+
+  displayCoins = [0, 0, 0, 0, 0, 0, 0, 0, 0]
   
 })
 
