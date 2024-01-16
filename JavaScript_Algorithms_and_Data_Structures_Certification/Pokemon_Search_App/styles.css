@@ -9,7 +9,7 @@
   * {
     margin: 0;
     padding: 0;
-    font-family: Tahoma, sans-serif;
+    font-family: system-ui;
   }
   
   body {
@@ -38,9 +38,63 @@
     height: 50rem;
     border-radius: 1rem;
     box-shadow: 1rem 1rem 0 var(--color-box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   h2 {
     display: inline;
     font-weight: lighter;
+  }
+  
+  label {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+  }
+  
+  input {
+    width: 13rem;
+    margin-right: .5rem;
+    height: 2.5rem;
+    padding: .5rem .5rem;
+  }
+  
+  button {
+    background-color: var(--color-button);
+    color: white;
+    border: none;
+    padding: .8rem 1.5rem;
+    border-radius: 2rem;
+  }
+  
+  #inputButton {
+    margin-bottom: 1.5rem;
+  }
+  
+  #pokemon-container {
+    background-color: var(--color-img);
+    width: 27rem;
+    height: 21rem;
+    padding: .6rem .6rem;
+    display: flex;
+    flex-direction:column;
+    justify-items: space-between;
+  }
+  
+  #pokemon-name, #pokemon-id {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  
+  #weight, #height {
+    font-size: .9rem;
+    font-weight: 400;
+    display: inline;
+  }
+  
+  #sprite {
+    width: 14rem;
+    height: 14rem;
+    margin: 0 auto;
   }
