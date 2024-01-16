@@ -21,6 +21,8 @@ let pokemonName
 
 buttonEl.addEventListener('click', () => {
 
+  pokemonTypesEl.innerHTML = ''
+
   pokemonName = newInput(inputEl.value)
   const pokemonLink = `${pokemonApp}\\${pokemonName}` 
   
@@ -51,11 +53,17 @@ const showPokemon = (data) => {
   pokemonIdEl.innerText = `#${id}`
   pokemonWeightEl.innerText = `Weight: ${weight}`
   pokemonHeightEl.innerText = `Height: ${height}`
+  pokemonSpriteEl.classList.remove('hidden')
   pokemonSpriteEl.setAttribute('src', `${sprites.front_default}`)
   
+  types.forEach((type) => {
+    pokemonTypesEl.innerHTML += `
+      <div class="box ${type.type.name}">${type.type.name.toUpperCase()}</div>
+    `
+  })
   
   // console.log(stats)
-  // console.log(types)
+
   
 
 }
