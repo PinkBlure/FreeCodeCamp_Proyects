@@ -21,7 +21,7 @@ let pokemonName
 
 buttonEl.addEventListener('click', () => {
 
-  pokemonTypesEl.innerHTML = ''
+  reset()
 
   pokemonName = newInput(inputEl.value)
   const pokemonLink = `${pokemonApp}\\${pokemonName}` 
@@ -82,4 +82,13 @@ const newInput = (value) => {
   
 }
 
+const reset = () => {
+  pokemonTypesEl.innerHTML = ''
+  pokemonNameEl.innerText = ''
+  pokemonIdEl.innerText = ''
+  pokemonWeightEl.innerText = ''
+  pokemonHeightEl.innerText = ''
+  pokemonSpriteEl.classList.add('hidden')
+  pokemonSpriteEl.setAttribute('src', '')
+} 
 
