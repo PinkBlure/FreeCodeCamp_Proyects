@@ -10,13 +10,6 @@ const pokemonHeightEl = document.getElementById("height")
 const pokemonSpriteEl = document.getElementById("sprite")
 const pokemonTypesEl = document.getElementById("types")
 
-const hpEl = document.getElementById("hp")
-const attackEl = document.getElementById("attack")
-const defenseEl = document.getElementById("defense")
-const spAttackEl = document.getElementById("special-attack")
-const spDefenseEl = document.getElementById("special-defense")
-const speedEl = document.getElementById("speed")
-
 let pokemonName
 
 buttonEl.addEventListener('click', () => {
@@ -45,9 +38,9 @@ const showPokemon = (data) => {
   const { exp , height, id, order, sprites, stats, types, weight} = data
   const { base_stat , effort , stat } = stats
 
-  //Tramitar esto
-  // console.log(stats[0])
-
+  stats.forEach((stat) => {
+    document.getElementById(stat.stat.name).innerText = stat.base_stat
+    })
 
   pokemonNameEl.innerText = pokemonName.toUpperCase()
   pokemonIdEl.innerText = `#${id}`
@@ -61,10 +54,6 @@ const showPokemon = (data) => {
       <div class="box ${type.type.name}">${type.type.name.toUpperCase()}</div>
     `
   })
-  
-  // console.log(stats)
-
-  
 
 }
 
@@ -90,5 +79,11 @@ const reset = () => {
   pokemonHeightEl.innerText = ''
   pokemonSpriteEl.classList.add('hidden')
   pokemonSpriteEl.setAttribute('src', '')
+  document.getElementById("hp").innerText = ''
+  document.getElementById("attack").innerText = ''
+  document.getElementById("defense").innerText = ''
+  document.getElementById("special-attack").innerText = ''
+  document.getElementById("special-defense").innerText = ''
+  document.getElementById("speed").innerText = ''
 } 
 
