@@ -190,3 +190,19 @@
   .dragon {
     background-color: #9e93f1;
   }
+  
+  #stats {
+    width: 80%;
+    margin: 1rem 0;
+  }
+  
+  td, th {
+    color: white;
+    background-color: var(--color-button);
+    height: 2rem;
+    text-align: center;
+  }
+  
+  th {
+    font-size: 1.2rem;
+  }
