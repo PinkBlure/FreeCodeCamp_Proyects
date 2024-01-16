@@ -35,14 +35,19 @@ const fetchData = async (pokemonLink, pokemonName) => {
 
 const showPokemon = (data) => {
 
-  const { exp , height, id, order, sprites, stats, types, weight} = data
+  const { exp , height, id, name, order, sprites, stats, types, weight} = data
   const { base_stat , effort , stat } = stats
 
   stats.forEach((stat) => {
     document.getElementById(stat.stat.name).innerText = stat.base_stat
     })
 
-  pokemonNameEl.innerText = pokemonName.toUpperCase()
+  if (pokemonName !== String(id)) {
+    pokemonNameEl.innerText = pokemonName.toUpperCase()
+  } else {
+    pokemonNameEl.innerText = name.toUpperCase()
+  }
+  
   pokemonIdEl.innerText = `#${id}`
   pokemonWeightEl.innerText = `Weight: ${weight}`
   pokemonHeightEl.innerText = `Height: ${height}`
