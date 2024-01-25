@@ -7,7 +7,7 @@ function App() {
         </blockquote>
         <div>
           <a id='tweet-quote' className='card-link' href='https://twitter.com/intent/tweet' target='_blank'>Twitter</a>
-          <a id='tumbl-quote' className='card-link' target='_blank'>Tumbl</a>
+          <a id='tumbl-quote' className='card-link' href = '#' target='_blank'>Tumbl</a>
         </div>
         <button id='new-quote'>New quote</button>
       </div>
