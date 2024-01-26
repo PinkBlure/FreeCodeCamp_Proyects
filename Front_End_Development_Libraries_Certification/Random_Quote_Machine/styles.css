@@ -1,0 +1,48 @@
+#tweet-quote, #tumblr-quote, #github {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: .5rem;
+    display: flex;
+    background-color: #0d6efd;
+    border-radius: .2rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+  }
+  
+  i {
+    font-size: 1.2rem;
+  }
+  
+  #quote_icon {
+    font-size: 2rem;
+  }
+  
+  .bg-color {
+    background-color: #0d6efd;
+  }
+  
+  #new-quote {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: .2rem;
+    padding: 0 1rem;
+    font-size: .9rem;
+    font-weight: 600;
+    height: 2.5rem;
+  }
+  
+  p, cite {
+    color: #0d6efd;
+    font-style: normal;
+    transition: color 0.7s ease;
+  }
+  
+  #tweet-quote, #tumblr-quote, #github, .bg-color, #new-quote {
+    transition: background-color 0.7s ease;
+  }
+  
+  #tweet-quote:hover, #tumblr-quote:hover, #github:hover, #new-quote:hover {
+    opacity: 0.8;
+  }
