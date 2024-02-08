@@ -61,10 +61,9 @@ class Previewer extends React.Component {
           </button>
         </div>
         <div 
-          id='editor-card-body' 
+          id='preview' 
           className={`card-body ${this.state.collapsed ? 'collapse' : ''}`} 
           style={{ height: this.state.collapsed ? '0' : 'auto', overflow: 'hidden' }}>
-          <textarea id='editor' className='w-100'></textarea>
         </div>
       </div>
     );
